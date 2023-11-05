@@ -21,7 +21,7 @@ const Navbar = () => {
         </Link>
         <ul className="nav_items">
           {routes.map((item) => (
-            <li>
+            <li key={item.label}>
               <Link className="nav_links" to={item.path}>
                 {item.label}
               </Link>
